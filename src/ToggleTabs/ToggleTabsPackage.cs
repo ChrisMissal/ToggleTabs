@@ -41,8 +41,8 @@ namespace Headspring.ToggleTabs
 
         private void MenuItemCallback(object sender, EventArgs e)
         {
-            var currentSetting = (bool) _dte.Properties["TextEditor", "CSharp"].Item("InsertTabs").Value;
-            _dte.Properties["TextEditor", "CSharp"].Item("InsertTabs").Value = !currentSetting;
+            var currentSetting = (bool) _dte.Properties["TextEditor", "AllLanguages"].Item("InsertTabs").Value;
+            _dte.Properties["TextEditor", "AllLanguages"].Item("InsertTabs").Value = !currentSetting;
         }
     }
 }
